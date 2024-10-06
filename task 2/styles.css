@@ -1,0 +1,133 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Stopwatch container styling */
+.stopwatch {
+    background-color: #ffffff;
+    padding: 3em;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 2.5em;
+    color: #333333;
+    margin-bottom: 0.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Stopwatch time display */
+#display {
+    font-size: 4em;
+    font-weight: 600;
+    color: #6c63ff;
+    margin-bottom: 1.5em;
+    letter-spacing: 2px;
+}
+
+/* Controls styling */
+.controls button {
+    padding: 0.75em 2.5em;
+    margin: 0.5em;
+    border: none;
+    border-radius: 30px;
+    background-color: #6c63ff;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(108, 99, 255, 0.2);
+}
+
+.controls button:hover {
+    background-color: #ff4e50;
+    box-shadow: 0 6px 12px rgba(255, 78, 80, 0.3);
+}
+
+/* Lap times section styling */
+.lap-times h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 1.5em;
+    font-weight: 600;
+}
+
+.lap-times ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0.5em;
+}
+
+.lap-times ul li {
+    background-color: #f9d423;
+    padding: 0.75em;
+    margin: 0.5em 0;
+    border-radius: 10px;
+    color: #333;
+    font-weight: 500;
+    box-shadow: 0 3px 8px rgba(249, 212, 35, 0.3);
+    font-size: 1.1em;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Timer section styling */
+.timer-controls {
+    margin-top: 2em;
+}
+
+.timer-controls h2 {
+    font-size: 1.8em;
+    color: #333;
+    font-weight: 600;
+}
+
+.timer-controls input {
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 5px;
+    margin: 0.5em;
+    width: 80px;
+    text-align: center;
+}
+
+.timer-controls button {
+    padding: 0.75em 2em;
+    border: none;
+    border-radius: 30px;
+    background-color: #ff4e50;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 1em;
+    box-shadow: 0 4px 10px rgba(255, 78, 80, 0.2);
+    transition: all 0.3s ease;
+}
+
+.timer-controls button:hover {
+    background-color: #6c63ff;
+}
